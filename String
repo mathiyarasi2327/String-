@@ -1,0 +1,44 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // 1. Creating a string
+        String str1 = "Hello";
+        String str2 = "World";
+
+        // 2. Concatenating strings
+        String str3 = str1 + " " + str2;
+        System.out.println("Concatenated String: " + str3); // Output: Hello World
+
+        // 3. Finding length of a string
+        System.out.println("Length of str1: " + str1.length()); // Output: 5
+
+        // 4. Comparing strings
+        String str4 = "hello";
+        System.out.println("str1 equals str4: " + str1.equals(str4)); // Output: false
+        System.out.println("str1 equals str4 (ignore case): " + str1.equalsIgnoreCase(str4)); // Output: true
+
+        // 5. Substring
+        String substr = str3.substring(6); // Extracts "World" from "Hello World"
+        System.out.println("Substring from str3: " + substr); // Output: World
+
+        // 6. Converting to uppercase and lowercase
+        System.out.println("Uppercase: " + str3.toUpperCase()); // Output: HELLO WORLD
+        System.out.println("Lowercase: " + str3.toLowerCase()); // Output: hello world
+
+        // 7. Checking if a string contains another string
+        System.out.println("str3 contains 'World': " + str3.contains("World")); // Output: true
+
+        // 8. Replacing part of the string
+        String str5 = str3.replace("World", "Java");
+        System.out.println("Replaced String: " + str5); // Output: Hello Java
+    }
+}
+output:
+Concatenated String: Hello World
+Length of str1: 5
+str1 equals str4: false
+str1 equals str4 (ignore case): true
+Substring from str3: World
+Uppercase: HELLO WORLD
+Lowercase: hello world
+str3 contains 'World': true
+Replaced String: Hello Java
